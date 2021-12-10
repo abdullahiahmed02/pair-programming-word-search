@@ -1,4 +1,5 @@
 const wordSearch = (letters, word) => { 
+<<<<<<< HEAD
     const joinArr = ls => ls.join('')
     const horizontalJoin = letters.map(joinArr)
     const transposeLetters = [];
@@ -27,3 +28,12 @@ const wordSearch = (letters, word) => {
 } 
 
 module.exports = wordSearch
+=======
+    const horizontalJoin = letters.map(ls => ls.join(''))
+    for (l of horizontalJoin) {
+        if (l.includes(word)) return true
+    }
+}
+
+module.exports = wordSearch
+>>>>>>> aea94bc7ac5eb83d4586445618783a96f3ffb05f
